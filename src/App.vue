@@ -299,9 +299,6 @@ const config = computed(() => {
 				'insertMergeField',
 				'previewMergeFields',
 				'|',
-				'aiCommands',
-				'aiAssistant',
-				'|',
 				'formatPainter',
 				'|',
 				'heading',
@@ -424,13 +421,14 @@ const config = computed(() => {
 			Underline
 		],
 		extraPlugins: [DocumentOutlineToggler, AnnotationsSidebarToggler],
-		balloonToolbar: ['comment', '|', 'aiAssistant', '|', 'bold', 'italic', '|', 'link', 'insertImage', '|', 'bulletedList', 'numberedList'],
+		balloonToolbar: ['comment', '|', 'bold', 'italic', '|', 'link', 'insertImage', '|', 'bulletedList', 'numberedList'],
 		cloudServices: {
 			tokenUrl: CLOUD_SERVICES_TOKEN_URL,
 			webSocketUrl: CLOUD_SERVICES_WEBSOCKET_URL
 		},
 		codeBlock: {
   			languages: [
+			  	{ language: 'plaintext', label: 'Plain text' },
     			{ language: 'javascript', label: 'JavaScript' },
 				{ language: 'typescript', label: 'TypeScript' },
 				{ language: 'css', label: 'CSS' },
